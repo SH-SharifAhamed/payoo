@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
      <meta charset="UTF-8">
@@ -38,13 +38,15 @@
                <div class="card-body">
                     <fieldset class="fildset">
                          <label class="lable text-nutral font-bold">Mobile Number</label>
-                         <input type="number" class="input rounded-full bg-base-200"
-                              placeholder="Enter your 11 digit number">
-
+                         <input id="input-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200"
+                         value="0123456789" placeholder="Enter your 11 digit number">
+                         <br>
                          <br>
 
-                         <label class="">4 Digit Pin</label>
-                         <input type="text" class="input" placeholder="Enter 4 digit Pin">
+                         <label class="lable text-nutral font-bold">4 Digit Pin</label>
+                         <input id="input-pin" type="password" maxlength="4"  class="input rounded-full bg-base-200" placeholder="Enter 4 digit Pin">
+                         <br><br>
+                         <button id="login-btn" class="btn btn-primary w-full  rounded-full">Login</button>
 
                     </fieldset>
 
@@ -53,7 +55,9 @@
           </div>
      </div>
 
+     
 
+     <script src="./script/login.js"></script>
 </body>
 
 </html>
